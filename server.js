@@ -9,5 +9,5 @@ app.get('/express_backend', (req, res) => {
 });
 
 app.post('/express_backend', (req, res) => {
-  res.send({ express: 'You did it!!!'})
+  res.send({ express: req.body})
 })

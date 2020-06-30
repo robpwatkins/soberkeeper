@@ -4,8 +4,8 @@ import './App.css';
 
 const App = () => {
 
-  const callBackendAPI = async () => {
-    const response = await fetch('/express_backend', { method: 'POST' });
+  const getBackendAPI = async () => {
+    const response = await fetch('/express_backend');
     const body = await response.json();
 
     if (response.status !== 200) {
@@ -15,7 +15,7 @@ const App = () => {
   }
 
   const handleClick = () => {
-    callBackendAPI()
+    getBackendAPI()
       .then(res => console.log(res));
   }
 
