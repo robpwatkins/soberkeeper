@@ -14,8 +14,16 @@ const App = () => {
     return body;
   }
 
+  const postBackendAPI = async () => {
+    const response = await fetch('/express_backend', {
+      method: 'POST',
+    })
+    const body = await response.json();
+    return body;
+  }
+
   const handleClick = () => {
-    getBackendAPI()
+    postBackendAPI()
       .then(res => console.log(res));
   }
 
