@@ -14,10 +14,10 @@ const App = () => {
     return body;
   }
 
-  const handleClick = () => {
-    getBackendAPI()
-      .then(res => console.log(res));
-  }
+  // const handleClick = () => {
+  //   getBackendAPI()
+  //     .then(res => console.log(res));
+  // }
 
   return (
     <div className="App">
