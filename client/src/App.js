@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
@@ -17,13 +16,14 @@ const App = () => {
   const postBackendAPI = async () => {
     const response = await fetch('/express_backend', {
       method: 'POST',
+      body: 'heyoo'
     })
     const body = await response.json();
     return body;
   }
 
   const handleClick = () => {
-    getBackendAPI()
+    postBackendAPI()
       .then(res => console.log(res));
   }
 
