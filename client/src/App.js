@@ -16,9 +16,13 @@ const App = () => {
   const postBackendAPI = async () => {
     const response = await fetch('/express_backend', {
       method: 'POST',
-      body: 'heyoo'
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ tester: 'heyoo' })
     })
     const body = await response.json();
+    console.log(body);
     return body;
   }
 

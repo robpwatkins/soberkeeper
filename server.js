@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
+
+app.use(express.json());
 
 app.listen(port, () => console.log(`I'm herrrrre on port ${port}`));
 
@@ -9,5 +12,6 @@ app.get('/express_backend', (req, res) => {
 });
 
 app.post('/express_backend', (req, res) => {
-  // res.send({ express: 'Posting like a boss' })
+  console.log(req.body);
+  res.send({ testRes: req.body });
 })
