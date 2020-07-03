@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import Posts from './components/Posts';
 
 const App = () => {
+  const [posts, setPosts] = useState([]);
 
   const getBackendAPI = async () => {
     const response = await fetch('/express_backend');
@@ -28,13 +30,14 @@ const App = () => {
 
   const handleClick = () => {
     getBackendAPI()
-      .then(res => console.log(res));
+      .then(res => setPosts(res));
   }
-
+  console.log(posts);
   return (
     <div className="App">
       <header className="App-header">
         <button onClick={handleClick}>Click ME!</button>
+        <Posts posts={posts} />
       </header>
     </div>
   );
