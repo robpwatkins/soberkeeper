@@ -27,7 +27,7 @@ const App = () => {
   }
 
   const handleClick = () => {
-    postBackendAPI()
+    getBackendAPI()
       .then(res => console.log(res));
   }
 
