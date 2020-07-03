@@ -6,7 +6,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
 
   const getBackendAPI = async () => {
-    const response = await fetch('/express_backend');
+    const response = await fetch('/testPosts');
     const body = await response.json();
 
     if (response.status !== 200) {
@@ -16,12 +16,16 @@ const App = () => {
   }
 
   const postBackendAPI = async () => {
-    const response = await fetch('/express_backend', {
+    const response = await fetch('/testPosts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ tester: 'heyoo' })
+      body: JSON.stringify({
+        ID: 5,
+        username: 'testUser5',
+        post: 'Look how far we have come.' 
+      })
     })
     const body = await response.json();
     console.log(body);

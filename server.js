@@ -18,14 +18,21 @@ app.use(express.json());
 
 app.listen(port, () => console.log(`I'm herrrrre on port ${port}`));
 
-app.get('/express_backend', (req, res) => {
+app.get('/testPosts', (req, res) => {
   connection.query('SELECT * FROM testPosts', (err, rows) => {
     if (err) throw err;
     res.send(rows);
   })
 });
 
-app.post('/express_backend', (req, res) => {
-  console.log(req.body);
-  res.send({ testRes: req.body });
+app.post('/testPosts', (req, res) => {
+  const newPoster = { 
+    ID: req.body.ID, 
+    username: req.body.username,
+    post: req.body.post
+   }
+  connection.query('INSERT INTO testPosts SET ?', newPoster, (err, res) => {
+    if (err) throw err;
+    console.log('Last insert ID:', res.insertID);
+  })
 })
