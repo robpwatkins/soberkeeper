@@ -4,19 +4,19 @@ const port = process.env.PORT || 5000;
 const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'Thefatlady3!',
+  user: 'testUser',
+  password: 'Password123$',
   database: 'testerDB'
 });
 
+app.listen(port, () => console.log(`Listening on port ${port}...`));
+
 connection.connect(err => {
   if (err) throw err;
-  console.log('You did it!!!');
+  console.log('Connected!');
 });
 
 app.use(express.json());
-
-app.listen(port, () => console.log(`I'm herrrrre on port ${port}`));
 
 app.get('/testPosts', (req, res) => {
   connection.query('SELECT * FROM testPosts', (err, rows) => {

@@ -36,7 +36,7 @@ const App = () => {
     getBackendAPI()
       .then(res => setPosts(res));
   }
-  console.log(posts);
+  
   return (
     <div className="App">
       <header className="App-header">
