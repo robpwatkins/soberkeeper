@@ -1,17 +1,17 @@
 const mysql = require('mysql');
-const con = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'Thefatlady3!',
   database: 'testerDB'
 });
 
-con.connect(err => {
+connection.connect(err => {
   if (err) throw err;
   console.log('You did it!!!');
 });
 
-con.query('SELECT * FROM testPosts', (err, rows) => {
+connection.query('SELECT * FROM testPosts', (err, rows) => {
   if (err) throw err;
   console.log('Got your DB data here:');
   console.log(rows);
@@ -23,6 +23,8 @@ con.query('SELECT * FROM testPosts', (err, rows) => {
 //   console.log('Last insert ID:', res.insertId);
 // })
 
-con.end(err => {
+connection.end(err => {
 
 });
+
+module.exports = connection;
