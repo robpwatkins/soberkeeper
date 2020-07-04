@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
 import Landing from './components/Landing';
 import Posts from './components/Posts';
 import Form from './components/Form';
@@ -24,6 +25,7 @@ const App = () => {
   
   return (
     <div className="App">
+      <Header />
       <Landing />
       <Posts posts={posts} />
     </div>
