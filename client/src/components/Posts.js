@@ -8,8 +8,8 @@ const Posts = ({ posts }) => {
         return (
           <div key={index}>
             {/* <h3>{post.ID}</h3> */}
-            <h5>{post.username}</h5>
-            <p>{post.post}</p>
+            <p style={{fontSize: "25px", fontWeight: "bold"}}>{post.username}</p>
+            <p style={{fontSize: "15px"}}>{post.post}</p>
           </div>
         )
       })}
