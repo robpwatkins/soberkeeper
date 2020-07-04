@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Landing from './components/Landing';
 import Posts from './components/Posts';
 import Form from './components/Form';
 
@@ -23,11 +24,8 @@ const App = () => {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <button onClick={handleClick}>Click ME!</button>
-        <Posts posts={posts} />
-        <Form />
-      </header>
+      <Landing />
+      <Posts posts={posts} />
     </div>
   );
 }

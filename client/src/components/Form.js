@@ -51,10 +51,10 @@ const Form = () => {
         />
         <br />
         <textarea 
-          placeholder="post" 
+          placeholder="outward" 
           cols="30" 
           rows="10" 
-          value={input.post}
+          value={input.outward}
           name="outward"
           onChange={handleChange}
         />
