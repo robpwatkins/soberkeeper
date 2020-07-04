@@ -15,22 +15,22 @@ const App = () => {
     return body;
   }
 
-  const postBackendAPI = async () => {
-    const response = await fetch('/testPosts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        ID: 5,
-        username: 'testUser5',
-        post: 'Look how far we have come.' 
-      })
-    })
-    const body = await response.json();
-    console.log(body);
-    return body;
-  }
+  // const postBackendAPI = async () => {
+  //   const response = await fetch('/testPosts', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       ID: 6,
+  //       username: 'testUser6',
+  //       post: 'Get it!' 
+  //     })
+  //   })
+  //   const body = await response.json();
+  //   console.log(body);
+  //   return body;
+  // }
 
   const handleClick = () => {
     getBackendAPI()
