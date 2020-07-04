@@ -27,12 +27,10 @@ app.get('/testPosts', (req, res) => {
 
 app.post('/testPosts', (req, res) => {
   const newPoster = { 
-    ID: req.body.ID, 
     username: req.body.username,
     post: req.body.post
    }
   connection.query('INSERT INTO testPosts SET ?', newPoster, (err, res) => {
     if (err) throw err;
-    console.log('Last insert ID:', res.insertID);
   })
 })

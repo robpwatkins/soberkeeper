@@ -12,10 +12,33 @@ const Form = () => {
       [event.target.name]: event.target.value
     })
   }
-  console.log(input);
+
+  const postBackendAPI = async (username, post) => {
+    const response = await fetch('/testPosts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        ID: 7,
+        username: username,
+        post: post 
+      })
+    })
+    const body = await response.json();
+    console.log(body);
+    return body;
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    let {username, post} = input;
+    postBackendAPI(username, post);
+  }
+  // console.log(input);
   return (
     <div className="form">
-      <form action="">
+      <form action="" onSubmit={handleSubmit}>
         <input 
           type="text" 
           placeholder="username"
@@ -32,6 +55,8 @@ const Form = () => {
           name="post"
           onChange={handleChange}
         />
+        <br />
+        <button onSubmit={handleSubmit}>Submit!</button>
       </form>
     </div>
   )
