@@ -7,7 +7,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
 
   const getBackendAPI = async () => {
-    const response = await fetch('/testPosts');
+    const response = await fetch('/testPosts/outward');
     const body = await response.json();
 
     if (response.status !== 200) {

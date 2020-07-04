@@ -18,17 +18,19 @@ connection.connect(err => {
 
 app.use(express.json());
 
-app.get('/testPosts', (req, res) => {
+// app.get('/ping', (req, res) => res.send('pong!'));
+
+app.get('/testPosts/outward', (req, res) => {
   connection.query('SELECT * FROM testPosts', (err, rows) => {
     if (err) throw err;
     res.send(rows);
   })
 });
 
-app.post('/testPosts', (req, res) => {
+app.post('/testPosts/outward', (req, res) => {
   const newPoster = { 
     username: req.body.username,
-    post: req.body.post
+    outward: req.body.outward
    }
   connection.query('INSERT INTO testPosts SET ?', newPoster, (err, res) => {
     if (err) throw err;

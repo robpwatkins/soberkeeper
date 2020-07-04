@@ -9,7 +9,7 @@ const Posts = ({ posts }) => {
           <div key={index}>
             <h3>{post.ID}</h3>
             <p style={{fontSize: "25px", fontWeight: "bold"}}>{post.username}</p>
-            <p style={{fontSize: "15px"}}>{post.post}</p>
+            <p style={{fontSize: "15px"}}>{post.outward}</p>
           </div>
         )
       })}

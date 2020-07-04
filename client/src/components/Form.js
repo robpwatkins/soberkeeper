@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Form = () => {
   const [input, setInput] = useState({
     username: '',
-    post: ''
+    outward: ''
   })
 
   const handleChange = event => {
@@ -13,16 +13,15 @@ const Form = () => {
     })
   }
 
-  const postBackendAPI = async (username, post) => {
-    const response = await fetch('/testPosts', {
+  const postBackendAPI = async (username, outward) => {
+    const response = await fetch('/testPosts/outward', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        ID: 7,
         username: username,
-        post: post 
+        outward: outward 
       })
     })
     const body = await response.json();
@@ -32,8 +31,12 @@ const Form = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    let {username, post} = input;
-    postBackendAPI(username, post);
+    let {username, outward} = input;
+    postBackendAPI(username, outward);
+    setInput({
+      username: '',
+      outward: ''
+    })
   }
   // console.log(input);
   return (
@@ -52,7 +55,7 @@ const Form = () => {
           cols="30" 
           rows="10" 
           value={input.post}
-          name="post"
+          name="outward"
           onChange={handleChange}
         />
         <br />
