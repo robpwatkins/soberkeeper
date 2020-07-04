@@ -28,7 +28,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Router />
       </div>
     </BrowserRouter>

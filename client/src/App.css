@@ -23,26 +23,41 @@ div#root {
   color: white;
 }
 
-.header {
+/* .header {
   width: 100%;
-  height: 8%;
+  height: 7%;
   background: white;
   color: rgba(252,70,107,1);
-}
+} */
 
 .landing {
   display: flex;
   width: 100%;
-  height: 92%;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
 .post-area {
-  width: 90%;
-  height: 90%;
-  background: white;
+  position: relative;
+  width: 85%;
+  height: 85%;
+  background: whitesmoke;
   border-radius: 35px;
+}
+
+.badge {
+  display: flex;
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  text-align: center;
+  background: #05dfd7;
+  border: 5px solid #76ead7;
+  border-radius: 50%;
 }
 
 textarea {
