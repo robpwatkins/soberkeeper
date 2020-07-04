@@ -2,9 +2,8 @@ import React from 'react';
 
 const Landing = () => {
   return (
-    <StyledLanding>
-      <PostArea></PostArea>
-    </StyledLanding>
+    <div className="landing">
+    </div>
   )
 }
 
