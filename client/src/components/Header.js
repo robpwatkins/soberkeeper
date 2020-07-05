@@ -6,7 +6,11 @@ const Header = () => {
     <div className="header-container">
       <header>
         <Badge />
-        SoberKeeper
+        <div className="title">SoberKeeper</div>
+        <div className="header-links">
+          <a href="">Login</a>
+          <a href="">Join</a>
+        </div>
       </header>
     </div>
   )
