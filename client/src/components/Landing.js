@@ -20,7 +20,7 @@ const Landing = () => {
   }
   return (
     <div className="landing">
-      {/* <div className="post-area">
+      <div className="post-area">
         <div className="outward-container">
           <Outward />
           <Outward />
@@ -31,7 +31,7 @@ const Landing = () => {
           <Outward />
           <Outward />
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
