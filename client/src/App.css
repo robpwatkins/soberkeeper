@@ -17,7 +17,7 @@ div#root {
   width: 100%;
   min-height: 100%;
   height: 100%;
-  padding: 21px 0;
+  padding: 23px 0;
   /* background: linear-gradient(0deg, #F397AD 0%, rgba(252,70,107,1) 100%); */
   background: #dadada;
   justify-content: center;
@@ -28,7 +28,7 @@ div#root {
 .header-container {
   display: flex;
   width: 100%;
-  height: 69px;
+  height: 75px;
   align-items: center;
   color: white;
   padding: 7px 0;
@@ -43,7 +43,7 @@ header {
   height: 100%;
   align-items: center;
   font-family: 'Petrona', serif;
-  padding: 0 0 0 121px;
+  padding: 0 0 0 130px;
   font-size: 40px;
   background: rgba(252,70,107,1);
   border-top: 2px dashed rgb(199, 55, 84);
@@ -55,8 +55,8 @@ header {
   position: absolute;
   top: 7px;
   left: 7px;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   /* align-items: center; */
   /* text-align: center; */
   padding: 4px;
