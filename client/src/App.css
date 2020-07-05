@@ -80,6 +80,7 @@ div#root {
   height: 150px;
   margin-top: 15px;
   background: #05dfd7;
+  border: 5px solid #76ead7;
   border-radius: 10px;
 }
 
