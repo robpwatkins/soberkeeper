@@ -39,25 +39,48 @@ div#root {
 }
 
 .post-area {
+  /* display: flex; */
+  /* flex-direction: column; */
   position: relative;
   width: 85%;
   height: 85%;
+  /* align-items: center; */
+  /* justify-content: center; */
   background: whitesmoke;
+  border: 9px solid #76ead7;
   border-radius: 35px;
+  /* overflow: scroll; */
 }
 
 .badge {
   display: flex;
   position: absolute;
-  top: -60px;
-  left: -60px;
-  width: 150px;
-  height: 150px;
+  top: -50px;
+  left: -55px;
+  width: 135px;
+  height: 135px;
   align-items: center;
   text-align: center;
   background: #05dfd7;
   border: 5px solid #76ead7;
   border-radius: 50%;
+}
+
+.outward-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 90%;
+  height: 100%;
+  /* align-items: center; */
+  overflow: scroll;
+}
+
+.outward {
+  width: 95%;
+  height: 150px;
+  margin-top: 15px;
+  background: #05dfd7;
+  border-radius: 10px;
 }
 
 textarea {
