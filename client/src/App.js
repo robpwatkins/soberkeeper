@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
-import Badge from './components/Badge';
 import Router from './Router';
 import Landing from './components/Landing';
 import Posts from './components/Posts';
@@ -13,8 +12,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Header /> */}
-        <Badge />
+        <Header />
+        {/* <Badge /> */}
         <Router />
       </div>
     </BrowserRouter>
