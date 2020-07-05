@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="post-area">
-        <Badge />
+        {/* <Badge /> */}
         <div className="outward-container">
           <Outward />
           <Outward />
