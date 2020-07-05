@@ -2,7 +2,9 @@ import React from 'react';
 
 const Badge = () => {
   return (
-    <div className="badge">Sober Keeper</div>
+    <div className="badge-container">
+      <div className="badge"></div>
+    </div>
   )
 }
 

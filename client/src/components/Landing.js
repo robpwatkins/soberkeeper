@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Badge from './Badge';
 import Outward from './Outward';
 
 const Landing = () => {
@@ -21,8 +20,7 @@ const Landing = () => {
   }
   return (
     <div className="landing">
-      <div className="post-area">
-        {/* <Badge /> */}
+      {/* <div className="post-area">
         <div className="outward-container">
           <Outward />
           <Outward />
@@ -33,7 +31,7 @@ const Landing = () => {
           <Outward />
           <Outward />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

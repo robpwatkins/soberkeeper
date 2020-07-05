@@ -1,9 +1,12 @@
 import React from 'react';
+import Badge from './Badge';
 
 const Header = () => {
   return (
-    <div className="header">
-      SoberKeeper
+    <div className="header-container">
+      <header>
+        <Badge />
+      </header>
     </div>
   )
 }
