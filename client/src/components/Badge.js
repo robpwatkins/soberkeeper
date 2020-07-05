@@ -4,7 +4,8 @@ const Badge = () => {
   return (
     <div className="badge-container">
       <div className="badge">
-        <div className="title"></div>
+        <div className="title">You can heal.</div>
+        {/* <div className="title">126 Days</div> */}
       </div>
     </div>
   )

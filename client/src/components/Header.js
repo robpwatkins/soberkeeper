@@ -6,6 +6,7 @@ const Header = () => {
     <div className="header-container">
       <header>
         <Badge />
+        SoberKeeper
       </header>
     </div>
   )
