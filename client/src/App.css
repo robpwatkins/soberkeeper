@@ -17,8 +17,9 @@ div#root {
   width: 100%;
   min-height: 100%;
   height: 100%;
+  padding: 12px 0;
   /* background: linear-gradient(0deg, #F397AD 0%, rgba(252,70,107,1) 100%); */
-  background: whitesmoke;
+  background: #dadada;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -37,10 +38,35 @@ div#root {
 header {
   width: 100%;
   height: 100%;
-  margin: 5px 0;
   background: rgba(252,70,107,1);
   border-top: 2px dashed rgb(199, 55, 84);
   border-bottom: 2px dashed rgb(199, 55, 84);
+}
+
+.badge-container {
+  /* display: flex; */
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  width: 105px;
+  height: 105px;
+  /* align-items: center; */
+  /* text-align: center; */
+  padding: 5px;
+  background: #05dfd7;
+  /* border: 5px solid #76ead7; */
+  border-radius: 50%;
+}
+
+.badge {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  background: #05dfd7;
+  border: 2px dashed #05afaa;
+  border-radius: 50%;
 }
 
 .landing {
@@ -65,31 +91,6 @@ header {
   /* overflow: scroll; */
 }
 
-.badge-container {
-  /* display: flex; */
-  position: absolute;
-  top: 5px;
-  left: 35px;
-  width: 105px;
-  height: 105px;
-  /* align-items: center; */
-  /* text-align: center; */
-  padding: 5px;
-  background: #05dfd7;
-  /* border: 5px solid #76ead7; */
-  border-radius: 50%;
-}
-
-.badge {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  align-items: center;
-  background: #05dfd7;
-  border: 2px dashed #05afaa;
-  border-radius: 50%;
-}
 
 .outward-container {
   /* display: flex; */
