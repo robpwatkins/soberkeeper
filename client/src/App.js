@@ -13,7 +13,6 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Header />
-        {/* <Badge /> */}
         <Router />
       </div>
     </BrowserRouter>
