@@ -20,7 +20,7 @@ div#root {
   /* padding: 23px 0; */
   /* background: linear-gradient(0deg, #F397AD 0%, rgba(252,70,107,1) 100%); */
   font-family: 'Crete Round', serif;
-  background: rgba(252,70,107,1);
+  background: #fc466b;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -30,7 +30,7 @@ div#root {
   display: flex;
   width: 100%;
   align-items: center;
-  border-bottom: 12px solid rgb(226, 62, 95);
+  border-bottom: 12px solid rgb(219, 60, 92);
   /* height: 75px;
   align-items: center;
   color: white;
@@ -44,7 +44,7 @@ div#root {
 .heal {
   width: 100%;
   text-align: center;
-  color: rgb(226, 62, 95);
+  color: rgb(219, 60, 92);
   font-size: 12vw;
   /* display: flex;
   width: 100%;
