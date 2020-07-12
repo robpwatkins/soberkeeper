@@ -22,14 +22,14 @@ const Landing = () => {
     <div className="landing">
       <div className="post-area">
         <div className="outward-container">
+          {/* <Outward />
           <Outward />
           <Outward />
           <Outward />
           <Outward />
           <Outward />
           <Outward />
-          <Outward />
-          <Outward />
+          <Outward /> */}
         </div>
       </div>
     </div>
