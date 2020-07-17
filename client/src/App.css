@@ -29,6 +29,7 @@ div#root {
 .header-container {
   display: flex;
   width: 100%;
+  /* justify-content: space-around; */
   align-items: center;
   border-bottom: 12px solid rgb(226, 62, 95);
   /* height: 75px;
@@ -42,7 +43,10 @@ div#root {
 }
 
 .heal {
-  width: 100%;
+  display: flex;
+  /* width: 100%; */
+  flex: 1;
+  justify-content: center;
   text-align: center;
   color: rgb(226, 62, 95);
   font-size: 12vw;
