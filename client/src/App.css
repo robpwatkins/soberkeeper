@@ -107,9 +107,9 @@ header a {
 }
 
 .header-badge {
-  /* margin: 0 40px 0 0; */
+  margin: 0 10px 0 0;
   /* width: 50%; */
-  line-height: 45px;
+  line-height: 48px;
   font-size: 42px;
   transform: rotate(-10deg) skew(-15deg);
   /* transform: ; */
