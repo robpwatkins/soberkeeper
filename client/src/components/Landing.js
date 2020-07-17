@@ -22,6 +22,7 @@ const Landing = () => {
     <div className="landing">
       <div className="post-area">
         <div className="outward-container">
+          <img src="" alt=""/>
           {/* <Outward />
           <Outward />
           <Outward />

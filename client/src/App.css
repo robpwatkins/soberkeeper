@@ -20,7 +20,7 @@ div#root {
   /* padding: 23px 0; */
   /* background: linear-gradient(0deg, #F397AD 0%, rgba(252,70,107,1) 100%); */
   font-family: 'Crete Round', serif;
-  background: #fc466b;
+  background: #42A5F5;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -31,7 +31,7 @@ div#root {
   width: 100%;
   /* justify-content: space-around; */
   align-items: center;
-  border-bottom: 12px solid rgb(226, 62, 95);
+  border-bottom: 12px solid #1875d27a;
   /* height: 75px;
   align-items: center;
   color: white;
@@ -48,7 +48,7 @@ div#root {
   flex: 1;
   justify-content: center;
   text-align: center;
-  color: rgb(226, 62, 95);
+  color: #1875d27a;
   font-size: 12vw;
   /* display: flex;
   width: 100%;
@@ -88,6 +88,7 @@ header a {
   margin: 15px 0 15px 15px;
   padding: 4px;
   background: #05dfd7;
+  background: #1876D2;
   /* border: 5px solid #76ead7; */
   border-radius: 50%;
   /* box-shadow: 0px 2px 5px #666666; */
@@ -102,12 +103,14 @@ header a {
   justify-content: center;
   align-items: center;
   background: #05dfd7;
+  background: #1876D2;
   border: 2px solid #05afaa;
+  border: 2px dashed white;
   border-radius: 50%;
 }
 
 .header-badge {
-  margin: 0 10px 0 0;
+  margin: 0 12px 0 0;
   /* width: 50%; */
   line-height: 48px;
   font-size: 42px;
