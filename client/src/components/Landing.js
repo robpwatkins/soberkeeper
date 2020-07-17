@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Outward from './Outward';
 
 const Landing = () => {
@@ -13,16 +13,25 @@ const Landing = () => {
     }
     return body;
   }
+  
+  useEffect(() => {
+    getBackendAPI()
+    .then(res => setPosts(res));
+  }, [])
+
 
   const handleClick = () => {
     getBackendAPI()
       .then(res => setPosts(res));
   }
+  // console.log(posts[0]);
   return (
     <div className="landing">
       <div className="post-area">
         <div className="outward-container">
-          <img src="" alt=""/>
+          {posts.length > 0 &&
+            <img src={posts[15].outward} alt=""/>
+          }
           {/* <Outward />
           <Outward />
           <Outward />
