@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header-container">
       <Badge />
       <div className="heal">
-        You can heal.
+        All the dogs.
         {/* <div className="title">SoberKeeper</div> */}
         {/* <div className="header-links"> */}
           {/* <a href="">Join</a> */}
