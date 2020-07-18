@@ -34,10 +34,10 @@ const Landing = () => {
     const file = await response.json();
     console.log(file);
     setImage(file.secure_url);
-    postPup();
+    postPup(file.secure_url);
   }
 
-  const postPup = async () => {
+  const postPup = async file => {
     const response = await fetch('/testPups', {
       method: 'POST',
       headers: {
@@ -45,7 +45,7 @@ const Landing = () => {
       },
       body: JSON.stringify({
         name: 'testPupper',
-        imgUrl: 'testUrl' 
+        imgUrl: file
       })
     })
   }
