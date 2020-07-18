@@ -34,6 +34,20 @@ const Landing = () => {
     const file = await response.json();
     console.log(file);
     setImage(file.secure_url);
+    postPup();
+  }
+
+  const postPup = async () => {
+    const response = await fetch('/testPups', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: 'testPupper',
+        imgUrl: 'testUrl' 
+      })
+    })
   }
 
   const handleClick = () => {
