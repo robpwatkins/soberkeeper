@@ -50,10 +50,10 @@ const Landing = () => {
     })
   }
 
-  // const handleClick = () => {
-  //   getBackendAPI()
-  //     .then(res => setPosts(res));
-  // }
+  const handleClick = () => {
+    getBackendAPI()
+      .then(res => setPosts(res));
+  }
   // console.log(posts[0]);
   return (
     <div className="landing">
