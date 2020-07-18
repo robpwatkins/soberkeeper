@@ -5,7 +5,6 @@ const Badge = () => {
     <div className="badge-container">
       <div className="badge">
         <div className="header-badge">Puppy API</div>
-        {/* <div className="title">126 Days</div> */}
       </div>
     </div>
   )
