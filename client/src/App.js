@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import Router from './Router';
+import Landing from './components/Landing';
+import Posts from './components/Posts';
+import Form from './components/Form';
 
 const App = () => {
 
@@ -28,11 +33,12 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={handleClick}>Click ME!</button>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Router />
+      </div>
+    </BrowserRouter>
   );
 }
 
